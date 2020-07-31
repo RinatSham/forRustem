@@ -1,0 +1,50 @@
+
+// КАЛЕНДАРЬ
+
+.datepicker{
+   max-width: 490px;
+   width: 100%;
+   font-family: 'Roboto', sans-serif;
+   font-size: 21px;
+}
+.datepicker--nav-action:hover, 
+.datepicker--nav-title:hover{
+   background: #6b6968;
+}
+.datepicker--nav{
+   background-color: #323232;
+   font-size: 15px;
+}
+.datepicker--cell-day{
+   width: 60px;
+   height: 50px;
+   margin: 3px 4px;
+}
+.datepicker--day-name{
+   font-size: 12px;
+   flex-basis: 60px;
+   margin: 3px 4px;
+   flex-grow: 0;
+   color: #000;
+   opacity: 0.5;
+}
+.datepicker--cell{
+   border-radius: 0;
+   background-color: #f2eeeb;
+}
+.datepicker--days-names{
+   margin-top: 0;
+}
+.datepicker--content{
+   background-color: #f2efeb;
+}
+.datepicker--cell.-selected-, 
+.datepicker--cell.-selected-.-current-{
+   background-color: #6b6a69;
+}
+.datepicker--nav-title{
+   color: #fff;
+   i{
+      color: #fff;
+   }
+}

@@ -16,3 +16,25 @@ li{
   padding: 0;
   list-style: none;
 }
+h1,h2,h3,h4,h5,h6{
+   margin: 0;
+}
+body{
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+}
+.container{
+  max-width: 1560px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+img{
+  max-width: 100%;
+}
+.mb18{
+   margin-bottom: 18px;
+}
+.mb70{
+   margin-bottom: 70px;
+}

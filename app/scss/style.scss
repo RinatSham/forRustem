@@ -1,3 +1,165 @@
 @import 'vars';
 @import 'global';
 @import 'fonts';
+@import 'components/header';
+@import 'components/rangeslider';
+@import 'components/formstyler';
+@import 'components/datepicker';
+
+.constructor{
+   padding-top: 75px;
+   max-width: 1900px;
+   margin: 0 auto;
+   position: relative;
+   padding-bottom: 20px;
+   &__img{
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 806px;
+   }
+   &__title{
+      font-size: 25px;
+      font-weight: 400;
+      margin-bottom: 45px;
+      position: relative;
+      span{
+         font-size: 18px;
+         font-weight: 300;
+         margin-left: 8px;
+      }
+   }
+}
+.constructor__title--absolute{
+   font-size: 124px;
+   font-family: 'Swiss721BT-Heavy';
+   position: absolute;
+   font-weight: 700;
+   z-index: -1;
+   color: #fbefea;
+   opacity: 0.70;
+   left: -46px;
+   top: -85px;
+}
+.constructor__gender{
+   display: flex;
+   font-size: 21px;
+   margin-bottom: 45px;
+   &_title{
+   }
+   &_radio{
+      margin-left: 35px;
+      cursor: pointer;
+      input{
+         margin-right: 12px;
+      }
+   }
+}
+.constructor__wrapper{
+   display: flex;
+   margin-bottom: 45px;
+   font-size: 21px;
+}
+.constructor__calendar{
+   margin-bottom: 95px;
+}
+.constructor__prop{
+   margin-right: 30px;
+   flex-basis: 230px;
+}
+.constructor__prop--opacity{
+   opacity: 0.6;
+}
+.constructor__prop--focus{
+   opacity: 1;
+}
+.constructor__select{
+   font-size: 15px;
+}
+.constructor__calendar-title{
+   font-size: 21px;
+}
+.constructor__input-name{
+   height: 35px;
+   padding: 7px 9px;
+   font-size: 15px;
+   width: 100%;
+}
+.constructor__prop--button{
+   opacity: 0.4;
+   cursor: pointer;
+   outline: transparent;
+   margin-top: 42px;
+   border: 0;
+   background-color: #000;
+   color: #fff;
+   height: 35px;
+   font-size: 15px;
+   width: 100%;
+}
+.constructor__range-title{
+   margin-bottom: 25px;
+   font-size: 21px;
+   opacity: 0.6;
+}
+.range_box{
+   display: flex;
+   font-size: 21px;
+   margin-bottom: 55px;
+   &__col{
+      flex-basis: 360px;
+      margin-right: 30px;
+      &:last-child{
+         margin-right: 0;
+      }
+      input{
+         width: 100%;
+      }
+   }
+   &__title{
+      margin-bottom: 27px;
+   }
+}
+.extra-controls{
+   input{
+      height: 40px;
+      padding: 12px;
+      border-radius: 0px;
+      border: 1px solid rgb(96, 96, 96);
+      font-size: 15px;
+   }
+}
+.color_box{
+   display: flex;
+   &__title{
+      margin-bottom: 25px;
+      font-size: 21px;
+   }
+}
+.color_box__container{
+   flex-basis: 230px;
+   margin-right: 30px;
+   &:last-child{
+      margin-right: 0;
+   }
+}
+.constructor__link{
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+   max-width: 360px;
+   background-color: #ff0000;
+   padding: 22px 18px 15px 37px;
+   font-size: 26px;
+   color: #fff;
+   margin-left: 390px;
+   margin-bottom: 75px;
+}
+.title_section{
+   font-size: 60px;
+   font-weight: 300;
+   margin-bottom: 55px;
+}
+
+
+@import 'media';

@@ -1,0 +1,31 @@
+
+// HEADER
+
+.header{
+   border-bottom: 1px solid #e0e0e0;
+ }
+ .header__title{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   min-height: 65px;
+ }
+ .header__col{
+   display: flex;
+   align-items: center;
+   &_text{
+      margin-left: 15px;
+      font-size: 18px;
+      font-weight: 500;
+   }
+   &_title{
+      margin-left: 20px;
+      font-size: 18px;
+      span{
+         margin-right: 15px;
+      }
+   }
+   &_link{
+      color: #666;
+   }
+ }

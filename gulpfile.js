@@ -8,7 +8,7 @@ let gulp = require('gulp'),
     cssmin = require('gulp-cssmin');
 gulp.task('sass', function(){
    return gulp.src('app/scss/**/*.scss')
-            .pipe(sass({outputStyle: 'compressed'}))
+            .pipe(sass({outputStyle: 'expanded'}))
             .pipe(rename({suffix : ".min"}))
             .pipe(autoprefixer({
               overrideBrowserslist: ['last 8 versions']
@@ -19,7 +19,11 @@ gulp.task('sass', function(){
 
 gulp.task('style', function(){
   return gulp.src([
-    'node_modules/normalize.css/normalize.css'
+    'node_modules/normalize.css/normalize.css',
+    'node_modules/ion-rangeslider/css/ion.rangeSlider.css',
+    'node_modules/air-datepicker/dist/css/datepicker.css',
+    'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+    'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
   ])
       .pipe(concat('libs.min.css'))
       .pipe(cssmin())
@@ -28,9 +32,12 @@ gulp.task('style', function(){
 
 gulp.task('script', function(){
   return gulp.src([
+     'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
+     'node_modules/air-datepicker/dist/js/datepicker.js',
+     'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
   ])
       .pipe(concat('libs.min.js'))
-      .pipe(uglify())
+      // .pipe(uglify())
       .pipe(gulp.dest('app/js'))
 });
 

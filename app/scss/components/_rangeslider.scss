@@ -1,0 +1,81 @@
+
+// RANGESLIDER
+
+.range_box__col--inch{
+   .irs{
+      font-family: 'Roboto', sans-serif;
+   }
+   .irs--round{
+      height: 31px;
+   }
+   .irs--round .irs-max, .irs--round .irs-min{
+      top: 14px;
+      font-size: 15px;
+      background-color: transparent;
+   }
+   .irs--round .irs-min{
+      display: none;
+   }
+   .irs--round .irs-bar{
+      background-color: #f1cda2;
+      top: -3px;
+   }
+   .irs--round .irs-line{
+      background-color: transparent;
+      top: -3px;
+   }
+   .irs--round .irs-single{
+      font-size: 15px;
+   }
+   .irs--round .irs-handle{
+      top: -10px;
+      width: 17px;
+      height: 17px;
+      border: 1px solid rgb(248, 222, 216);
+      background-color: #fff;
+      border-radius: 24px;
+      box-shadow: none;
+   }
+   .irs--round .irs-line{
+      background-color: transparent;
+   }
+   .irs--round .irs-single:before{
+      display: none;
+   }
+   .irs-single{
+      top: 14px;
+      background-color: transparent;
+      color: #000;
+   }
+}
+.range_box__col--wt{
+   .irs--round .irs-line{
+      top: 16px;
+      height: 1px;
+      background-color: #242424;
+   }
+   .irs--round .irs-bar{
+      top: 15px;
+      background-color: #f1cda2;;
+   }
+   .irs-from, .irs-to{
+      top: 27px;
+   }
+   .irs--round .irs-handle{
+      top: 8px;
+      width: 17px;
+      height: 17px;
+      border: 1px solid rgb(248, 222, 216);
+      background-color: #fff;
+      border-radius: 24px;
+      box-shadow: none;
+   }
+   .irs--round .irs-from, .irs--round .irs-to{
+      font-size: 15px;
+      background-color: transparent;
+      color: #000;
+   }
+   .irs--round .irs-from:before, .irs--round .irs-to:before{
+      display: none;
+   }
+}

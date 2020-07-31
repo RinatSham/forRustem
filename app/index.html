@@ -1,20 +1,171 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/libs.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Baby Configurator</title>
+   <link rel="stylesheet" href="css/libs.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
+   <!-- HEADER -->
+   <header class="header">
+      <div class="container">
+         <div class="header__title">
+            <div class="header__col">
+               <a class="logo" href="#">
+                  <img src="images/baby.png" alt="">
+               </a>
+               <div class="header__col_text">Baby Configurator</div>
+               <div class="header__col_title">
+                  <span>/</span>Идеальный ребенок с доставкой</div>
+            </div>
+            <div class="header__col">
+               <a class="header__col_link" href="tel:+78432506070">+7 (843) 250-60-70</a>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- HEADER END -->
+
+   <!-- CONSTRUCTOR -->
+   <main class="main">
+      <section class="constructor">
+         <div class="container">
+            <h1 class="title_section">Собери себе малыша</h1>
+            <!-- ШАГ 1 -->
+            <div class="constructor__step">
+               <div class="constructor__title">
+                  Шаг 1.<span>(Основные параметры)</span>
+                  <div class="constructor__title--absolute">1.</div>
+               </div>
+               <div class="constructor__gender">
+                  <label class="constructor__gender_title">Пол ребенка:</label>
+                  <label class="constructor__gender_radio" for="male"><input type="radio" name="gender" value="male"
+                        checked id="male">Мужской</label>
+                  <label class="constructor__gender_radio" for="famale"><input type="radio" name="gender" value="famale"
+                        id="famale">Женский</label>
+               </div>
+               <div class="constructor__wrapper">
+
+                  <div class="constructor__prop">
+                     <label for="race">
+                        <div class="constructor__race mb18">Раса</div>
+                        <select class="constructor__select" name="race" id="race">
+                           <option value="dark">Темный эльф</option>
+                           <option value="white">Европеоидная раса</option>
+                           <option value="human">Негроидная раса</option>
+                           <option value="orc">Монголоидная раса</option>
+                           <option value="orc">Австралоидная раса</option>
+                           <option value="orc">Неандерталец</option>
+                        </select>
+                     </label>
+                  </div>
+
+                  <div class="constructor__prop constructor__prop--opacity">
+                     <label for="name">
+                        <div class="constructor__name mb18">Имя</div>
+                        <input class="constructor__input-name" type="text" id="name">
+                     </label>
+                  </div>
+
+                  <div class="constructor__prop">
+                     <button class="constructor__prop--button">сгенерировать случайное</button>
+                  </div>
+
+               </div>
+
+               <div class="constructor__calendar">
+                  <div class="constructor__calendar-title mb18">Дата рождения</div>
+                  <div class="datepicker-here"></div>
+               </div>
+            </div>
+            <!-- ШАГ 1 END -->
+            <!-- ШАГ 2 -->
+            <div class="constructor__step mb70">
+               <div class="constructor__title">
+                  Шаг 2.<span>(Физические данные)</span>
+                  <div class="constructor__title--absolute">2.</div>
+               </div>
+               <div class="constructor__range-title">Выберете диапозон</div>
+               <div class="range_box">
+                  <div class="range_box__col range_box__col--inch">
+                     <div class="range_box__title">Рост, мм</div>
+                     <div class="extra-controls">
+                        <input type="text" class="js-input" value="0" />
+                     </div>
+                     <input type="text" class="js-range-slider-inch" name="my_range" value="" />
+                  </div>
+                  <div class="range_box__col range_box__col--wt">
+                     <div class="range_box__title">Вес, гр</div>
+                     <input type="text" class="js-range-slider-wt" name="my_range" value="" />
+                  </div>
+               </div>
+               <div class="color_box">
+                  <div class="color_box__container">
+                     <div class="color_box__title">
+                        Цвет кожи
+                     </div>
+                     <div class="color_box__select">
+                        <select class="color_box__select--skin">
+                           <option class="circle_pink" value="">кожанный</option>
+                           <option class="circle_mylat" value="">мулат</option>
+                           <option class="circle_smyg" value="">смуглый</option>
+                           <option class="circle_dark" value="">темный</option>
+                           <option class="circle_green" value="">зеленый</option>
+                           <option class="circle_blue" value="">синий</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="color_box__container">
+                     <div class="color_box__title">
+                        Цвет глаз
+                     </div>
+                     <div class="color_box__select">
+                        <select class="color_box__select--eye">
+                           <option class="circle_black" value="">черный</option>
+                           <option class="circle_grey" value="">серый</option>
+                           <option class="circle_red" value="">красный</option>
+                           <option class="circle_dark" value="">карие</option>
+                           <option class="circle_green" value="">зеленый</option>
+                           <option class="circle_bluue" value="">голубой</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="color_box__container">
+                     <div class="color_box__title">
+                        Цвет волос
+                     </div>
+                     <div class="color_box__select">
+                        <select class="color_box__select--hair">
+                           <option class="circle_yellow" value="">желтый</option>
+                           <option class="circle_shaten" value="">шатен</option>
+                           <option class="circle_rizhi" value="">рыжий</option>
+                           <option class="circle_brunet" value="">брюнет</option>
+                           <option class="circle_smyg" value="">русый</option>
+                           <option class="circle_white" value="">белый</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="constructor__link" href="#">Оформить доставку <img src="images/bird.png" alt=""></a>
+         </div>
+         <!-- ШАГ 2 END -->
+         <div class="constructor__img">
+            <img src="images/baby.jpg" alt="">
+         </div>
+      </section>
+   </main>
+   <!-- CONSTRUCTOR END -->
 
 
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="js/libs.min.js"></script>
+   <script src="js/main.js"></script>
 </body>
+
 </html>
